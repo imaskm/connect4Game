@@ -13,8 +13,6 @@ def get_next_coin_value_to_be_added(game_id, db: Session):
 
 
 def get_game_matrix(game_id, db: Session):
-    import pdb
-    pdb.set_trace()
     return db.query(Game).filter(Game.game_id == game_id)
 
 
